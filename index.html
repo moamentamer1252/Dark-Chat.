@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Dark Chat</title>
+    <style>
+        body {
+            background-image: url(https://t3.ftcdn.net/jpg/05/53/16/90/360_F_553169021_BeiKoyeUfpAs6z2NclsurOlQl0IOPxjx.jpg);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mom {
+            align-items: center;
+            max-width: 450px;
+            border: 3px solid #8b0000;
+            width: 450px;
+            height: auto;
+            padding: 0px 50px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.123);
+            border-radius: 20px;
+            position: relative;
+            animation: borderAnimation 5s infinite;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 10px 15px 25px rgba(0, 0, 0, 0.384);
+            margin-top: 70px; 
+            padding-bottom: 0px;
+        }
+        @keyframes borderAnimation {
+            0% { border-color: #8b0000; }
+            25% { border-color: #ff4500; }
+            50% { border-color: darkred; }
+            75% { border-color: #ff6347; }
+            100% { border-color: #8b0000; }
+        }
+        img {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            bottom: 35px;
+            left: 120px;
+        }
+        h1 {
+            left: -8px;
+            color:red;
+            top: -40px;
+            position: relative;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 11px;
+            font-size: 2rem;
+        }
+        input {
+            color: red;
+            width: 100%;
+            outline: none;
+            border: none;
+            align-items: center;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.384);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        ::placeholder {
+            color: rgba(240, 248, 255, 0.301);
+            font-size: small;
+            font-weight: 100;
+            font-family: Georgia, serif;
+        }
+        label {
+            margin-bottom: 7px;
+            display: block;
+        }
+        .button {
+            transform: translateY(-15px);
+            color: rgb(0, 0, 0);
+            background-color: darkred;
+            width: 75%;
+            height: 30px;
+            border: none;
+            outline: none;
+            font-family: Blippo, fantasy;
+            border-radius: 15px;
+            font-size: large;
+            display: block;
+            margin: 20px auto;
+        }
+        .button:hover {
+            transition: 0.2s ease;
+            background-color: rgb(170, 9, 9);
+        }
+       
+        .forgot {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+        }
+
+        @media (max-width: 768px) {
+            .mom {
+                margin-bottom: -80px;
+                padding: 15px;
+                width: 100%;
+                min-width: 345px;
+            }
+            h1 {
+                font-size: 1.25rem;
+                transform: translateX(10px) translateY(-7px);
+            }
+            input {
+                font-size: 0.9rem;
+            }
+            .button {
+                width: 80%;
+                height: 35px;
+                font-size: medium;
+            }
+            img{
+                transform: translateY(-12px) translateX(-2px);
+                width: 70px;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <div class="mom">
+            <div>
+                <img src="https://images.vexels.com/media/users/3/152600/isolated/preview/1c6716b235863cb53f9b3dbd3aa36ab8-red-circle-question-mark-icon.png" alt="profile img">
+            </div>
+            <h1>Welcome To Dark Chat</h1>
+            <div>
+                <label for="1">Full Name</label>
+                <input id="1" type="text" required name="Full Name" pattern="\b\w+\b \b\w+\b \b\w+\b">
+            </div>
+            <div>
+                <label for="2">Age</label>
+                <input id="2" type="tel" maxlength="2" required name="Age">
+            </div>
+            <div>
+                <label for="6">Your Email</label>
+                <input id="6" type="email" required name="Full Name">
+            </div>
+            <div>
+                <label for="4">Phone Number</label>
+                <input id="4" type="tel" required maxlength="11" name="Phone Number">
+            </div>
+            <div>
+                <label for="5">Your Job</label>
+                <input id="5" type="text" required>
+            </div>
+            <input class="button" type="submit" value="sign in">
+        </div>
+    </form>
+</body>
+</html>
